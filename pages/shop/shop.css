@@ -1,0 +1,82 @@
+
+/* tab */
+
+.tab-container input[type='radio'] {
+    display: none;
+}
+
+.category input, .category label {
+    float: left;
+    margin: 25px 0;
+}
+.category label {
+    display: block;
+    width: 50px;
+    margin-left: 10px;
+    /* background-color: yellow; */
+}
+.label-last {
+    width: calc(100% - 218px);
+}
+
+.tab-content {
+    display: none;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 340px;
+    height: 500px;
+}
+
+#tab1:checked ~ .tab-content {
+    display: block;
+}
+#tab2:checked ~ .sale {
+    display: block;
+}
+#tab3:checked ~ .new {
+    display: block;
+}
+
+.tab-content img:nth-child(2) {
+    display: none;
+    /* opacity: 0; */
+}
+
+.tab-content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* category */
+.category {
+    width: 100%;
+    background-color: #f7f7f7;
+    height: 60px;
+    margin-bottom: 1600px;
+}
+
+.content-info {
+    position: absolute;
+    top: 430px;
+    left: 0;
+    width: 100%;
+}
+
+.tab-content:hover img:nth-child(2) {
+    display: block;
+}
+
+.sale p:nth-child(2) {
+    color: red;
+}
+.sale p:nth-child(3) {
+    text-decoration: line-through;
+}
+
+.content-info p {
+    margin-top: 3px;
+}
