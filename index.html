@@ -14,10 +14,46 @@
 
     <title>Clone Coding - ROVECONCEPTS</title>
 
+    <style>
+        header {
+            background: transparent;
+            transition: background 0.3s;
+        }
+
+        header::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #efeeea; /* Overlay background */
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: -1;
+        }
+
+        header.sticky .menu-bar a, 
+        header.sticky .quick-bar a, 
+        header.sticky .logo, 
+        header.sticky .logo span, 
+        header.sticky .quick-bar span {
+            color: #333;
+        }
+
+        header.sticky .menu-bar>ul>li {
+            border-top: 1px solid #333;
+        }
+
+        header.sticky::before {
+            opacity: 1;
+        }
+    </style>
 
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="wrap">
             <div class="quick-bar">
                 <a href="./index.html">
@@ -72,6 +108,16 @@
                 </div>
             </nav>
         </div>
+        <script>
+            document.addEventListener('scroll', function() {
+                const header = document.getElementById('header');
+                if (window.scrollY > 0) {
+                    header.classList.add('sticky');
+                } else {
+                    header.classList.remove('sticky');
+                }
+            });
+        </script>
     </header>
 
     <main>
@@ -105,31 +151,31 @@
                 <h4 class="link-more"><a href="">Shop All</a></h4>
                 <div class="slide-contain">
                     <div class="slide-area">
-                        <div class="gallery-cell">
+                        <div class="gallery-cell" style="order: 2;">
                             <img src="./img/slide1.jpg" alt="slide1">
                             <p>Mia Lounge Chair</p>
                         </div>
-                        <div class="gallery-cell">
+                        <div class="gallery-cell" style="order: 1;">
                             <img src="./img/slide2.jpg" alt="slide2">
                             <p>Porter Bed</p>
                         </div>
-                        <div class="gallery-cell">
+                        <div class="gallery-cell" style="order: 3;">
                             <img src="./img/slide3.jpg" alt="slide3">
                             <p>Solana Dining Chair</p>
                         </div>
-                        <div class="gallery-cell">
+                        <div class="gallery-cell" style="order: 7;">
                             <img src="./img/slide4.jpg" alt="slide4">
                             <p>Athena Standing Desk</p>
                         </div>
-                        <div class="gallery-cell">
+                        <div class="gallery-cell" style="order: 6;">
                             <img src="./img/slide5.jpg" alt="slide5">
                             <p>Gallus Dining Table</p>
                         </div>
-                        <div class="gallery-cell">
+                        <div class="gallery-cell" style="order: 4;">
                             <img src="./img/slide6.jpg" alt="slide6">
                             <p>Reya Curved Sectional</p>
                         </div>
-                        <div class="gallery-cell">
+                        <div class="gallery-cell" style="order: 5;">
                             <img src="./img/slide7.jpg" alt="slide7">
                             <p>Jericho Lounge Chair</p>
                         </div>

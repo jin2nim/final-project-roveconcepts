@@ -1,21 +1,25 @@
+
 /* header */
 
 header {
     width: 100%;
     margin: 0 auto;
     padding: 20px 0 1px 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
-    /* background-color: #ccc; */
 }
 
 header:hover {
     background-color: #efeeea;
 }
 
-header:hover .menu-bar a, header:hover .quick-bar a, header:hover .logo, header:hover .logo span, header:hover .quick-bar span {
+header:hover .menu-bar a, 
+header:hover .quick-bar a, 
+header:hover .logo, 
+header:hover .logo span, 
+header:hover .quick-bar span {
     color: #333;
 }
 
@@ -32,7 +36,6 @@ header a {
     line-height: 60px;
     position: relative;
 }
-
 
 .logo {
     position: absolute;
@@ -227,7 +230,6 @@ header a {
 }
 
 .slide-area {
-    clear: both;
     width: 1400px;
     overflow-x: auto;
     display: flex;
