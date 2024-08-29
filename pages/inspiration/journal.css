@@ -23,10 +23,6 @@
     gap: 80px 20px;
 }
 
-.card {
-    grid-column: 1fr;
-}
-
 .card-area {
     width: 100%;
     height: 295px;

@@ -1,0 +1,119 @@
+.swatch-step-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.swatch-step-wrapper h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    white-space: nowrap;
+}
+
+.swatch-step-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 80px 0 90px;
+}
+
+.swatch-step-card {
+    display: flex;
+}
+.swatch-step-number,
+.swatch-step-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.swatch-step-number {
+    align-items: center;
+}
+
+.swatch-step-number p {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: #666;
+    font-size: 30px;
+}
+.swatch-step-number .line {
+    background-color: #666;
+    width: 1px;
+    height: 40px;
+    margin-top: 10px;
+}
+.swatch-step-content {
+    padding: 16px 0 0 20px;
+}
+
+.swatch-step-content h3 {
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.swatch-step-content p {
+    line-height: 22px;
+}
+
+/* submit-area */
+
+.submit-area {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.submit-area p {
+    text-align: center;
+}
+
+.submit-area .grid-area {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    margin-top: 50px;
+}
+.submit-area .grid-area .grid2 {
+    grid-column: span 2;
+}
+.submit-area .grid-area .grid4 {
+    grid-column: span 4;
+}
+.submit-area .grid-area .grid6 {
+    grid-column: span 6;
+}
+.submit-area .grid-area .grid7 {
+    grid-column: span 7;
+}
+.submit-area .grid-area .grid8 {
+    grid-column: span 8;
+}
+
+.submit-area input,
+.submit-area select,
+.submit-area textarea {
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #333;
+    background-color: #f7f7f7;
+}
+
+.submit-area button {
+    margin-bottom: 5px;
+}
+
+/* checkbox area */
+.checkbox-wrap {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+.checkbox-area {
+    padding: 5px 0;
+}
+.checkbox-area input {
+    margin-right: 5px;
+}

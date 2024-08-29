@@ -20,22 +20,22 @@
     display: none;
 }
 
-.category input, .category label {
-    float: left;
-    margin: 25px 0;
-    position: relative;
-    z-index: 2;
-}
 .category label {
     display: block;
     width: 50px;
     margin-left: 10px;
-    /* background-color: yellow; */
+}
+
+.category input, .category label {
+    float: left;
+    margin: 25px 5px;
+    position: relative;
+    z-index: 2;
 }
 
 .tab-grid {
     padding-top: 20px;
-    width: 100%;
+    clear: both;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;

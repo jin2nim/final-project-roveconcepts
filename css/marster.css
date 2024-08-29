@@ -205,3 +205,16 @@ footer .wrap {
     text-align: center;
     line-height: 28px;
 }
+
+
+.break-line {
+    width: 760px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}

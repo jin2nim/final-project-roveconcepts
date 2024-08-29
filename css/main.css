@@ -89,9 +89,7 @@ header a {
     left: 15px;
     opacity: 0;
     display: none;
-    /* box-shadow: rgba(99,99,99,0.2) 0px 2px 8px 0px; */
     box-shadow: #333 0px 2px 8px 0px;
-    /* border: 1px solid #333; */
 }
 
 .sub-menu h2 {
@@ -232,6 +230,7 @@ header a {
 .slide-area {
     width: 1400px;
     overflow-x: auto;
+    flex-wrap: nowrap;
     display: flex;
     gap: 1%;
     align-items: center;

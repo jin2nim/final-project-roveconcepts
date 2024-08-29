@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+     <!-- Google icon CDN -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0" />
+
+     <link rel="stylesheet" href="../../css/marster.css">
+     <link rel="stylesheet" href="../../css/sub-main.css">
+     <link rel="stylesheet" href="./freeswatches.css">
+     
+    
+    <title>Clone Coding - ROVECONCEPTS</title>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <div class="quick-bar">
+                <a href="../../index.html"><h1 class="logo"><span>ROVE</span>CONCEPTS</h1></a>
+                <ul>
+                    <li class="float-left">
+                        <a herf="#">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>                            
+                            SEARCH
+                        </a>
+                    </li>
+                    <li class="float-right"><a herf="#">
+                        <span class="material-symbols-outlined">
+                            login
+                        </span>
+                        Log-in
+                    </a></li>
+                    <li class="float-right"><a herf="#">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                    </a></li>
+                </ul>
+            </div>
+            <nav>
+                <div class="menu-bar">
+                    <ul>
+                        <li class="main-menu">
+                            <a href="../shop/shop.html">SHOP</a>
+                        </li>
+                        <li class="main-menu">
+                            <a href="#">INSPIRATION</a>
+                            <ul class="sub-menu">
+                                <li><a href="../inspiration/shopthelook.html">SHOP THE LOOK</a></li>
+                                <li><a href="../inspiration/journal.html">THE JOURNAL</a></li>
+                                <li><a href="../inspiration/gallery.html">GALLERY</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu">
+                            <a href="#">DISCOVER</a>
+                            <ul class="sub-menu">
+                                <li><a href="./membership.html">MEMBERSHIP</a></li>
+                                <li><a href="./freeswatches.html">FREE SWATCHES</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu"><a href="#">SHOWROOM</a></li>
+                        <li class="main-menu"><a href="#" class="red">SALE</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="main-visual">
+            <img src="./img/freeswatches-banner.png">
+            <div class="text-area">
+                <h2>Free Swatches</h2>
+                <p>Explore the tactile qualities, intricate finishes, captivating colors, and the way they transform under various lighting conditions in the comfort of your own living space. We understand the importance of making informed choices when it comes to furniture shopping, which is why we provide complimentary swatches to simplify your decision-making process.</p>
+            </div>
+        </section>
+        <section class="swatch-step-wrapper wrap">
+            <h2>How It works</h2>
+            <div class="swatch-step-cont">
+                <div class="swatch-step-card">
+                    <div class="swatch-step-number">
+                        <p>01</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="swatch-step-content">
+                        <h3>Get Inspired</h3>
+                        <p>From plush velvet to premium vegan leather, discover our collection of luxurious and high-quality fabrics and materials.</p>
+                    </div>
+                </div>
+                <div class="swatch-step-card">
+                    <div class="swatch-step-number">
+                        <p>02</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="swatch-step-content">
+                        <h3>Select Your Swatches</h3>
+                        <p>Select up to 12 complimentary swatches of your choice to be delivered to your home so you can see them in person.</p>
+                    </div>
+                </div>
+                <div class="swatch-step-card">
+                    <div class="swatch-step-number">
+                        <p>03</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="swatch-step-content">
+                        <h3>Finalize your complimentary order</h3>
+                        <p>To finalize your swatch order, simply fill out the form below to submit your request. Once submitted, you will receive your swatches within 3-7 business days.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break-line"></div>
+        </section>
+
+        <section class="submit-area wrap">
+            <p>Complete the form below to submit your swatch request.</p>
+            <div class="grid-area">
+                <input type="text" id="firstname" class="grid4" placeholder="First Name*" required>
+                <input type="text" id="lastname" class="grid4" placeholder="Last Name*" required>
+                <input type="email" id="email" class="grid8" placeholder="Email*" required>
+                <input type="text" id="adress" class="grid6" placeholder="Street Address*" required>
+                <input type="text" id="suite" class="grid2" placeholder="Suite/Apt">
+                <select id="national" name="national" class="grid2">
+                    <option value="1">Canada</option>
+                    <option value="2">USA</option>
+                    <option value="3">South Korea</option>
+                    <option value="4">Italy</option>
+                </select>
+                <select id="province" name="province" class="grid2">
+                    <option value="1">BC</option>
+                    <option value="2">ON</option>
+                    <option value="3">NB</option>
+                </select>
+                <input type="text" id="city" placeholder="City*" class="grid2" required>
+                <input type="text" id="postal" placeholder="Postal/ZIP *" class="grid2" required>
+                <input type="number" id="number" placeholder="+1" readonly>
+                <input type="tel" id="tel" placeholder="Telephone*" class="grid7" required>
+                <textarea id="interest" placeholder="Products of Interest" class="grid8"></textarea>
+            </div>
+            <div class="checkbox-wrap">
+                <div class="checkbox-area">
+                    <input type="checkbox" id="designer" name="designer">
+                    <label for="designer">I want the full designer package and will pay $50.</label>
+                </div>
+                <div class="checkbox-area">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Subscribe to our mailing list to receive the latest news, updates, and promotions. You can unsubscribe at any time.</label>
+                </div>
+            </div>
+            <button class="btn">complete swatch order</button>
+            <p class="italic">*Please note: swatches cannot be shipped out to PO Boxes.</p>
+        </section>
+    </main>
+
+    
+    <footer>
+        <!-- link / submit -->
+        <div class="wrap">
+            <div class="footer-menu">
+                <h2>HELP</h2>
+                <ul>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Store Policy</a></li>
+                    <li><a href="">Returns, Refunds & Claims</a></li>
+                    <li><a href="">Product Care</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h2>DISCOVER</h2>
+                <ul>
+                    <li><a href="#">MEMBERSHIP</a></li>
+                    <li><a href="#">FREE SWATCHES</a></li>
+                </ul>
+            </div>
+            <div class="spacer"></div>
+            <div class="footer-join">
+                <h2>Join our mailing list</h2>
+                <p>Get the latest updates on promotions, new products, news, and much more.</p>
+                <div class="input-area">
+                    <input type="text" placeholder="Email Address">
+                    <button>SIGN UP!</button>
+                </div>
+                <ul class="social-media">
+                    <li><a aria-label="facebook" class="facebook" href="https://www.facebook.com/roveconcepts" rel="noopener" target="_blank" title="Join us on Facebook">&nbsp;</a></li>
+                    <li><a aria-label="twitter" class="twitter" href="http://www.twitter.com/roveconcepts/" rel="noopener" target="_blank" title="View our Twitter page!">&nbsp;</a></li>
+                    <li><a aria-label="instagram" class="instagram" href="http://instagram.com/roveconcepts" rel="noopener" target="_blank" title="View our Instagram page">&nbsp;</a></li>
+                    <li><a aria-label="pinterest" class="pinterest" href="http://www.pinterest.com/roveconcepts/" target=" rel=" title="View our Pinterest page!">&nbsp;</a></li>
+                    <li class="last-item"><a aria-label="houzz" class="houzz" href="http://www.houzz.com/pro/roveconcepts/roveconcepts" rel="noopener" target="_blank" title="View us on Houzz">&nbsp;</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="wrap">
+            <p>
+                <a href="">Terms</a>
+                &#149;
+                <a href="">Privacy</a>
+                &#149;
+                <a href="">Accessibility</a>
+                &#149;
+                <a href="">Your Privacy Choices
+                    <img src="../../img/footer-check.svg" alt="privacy check">
+                </a>
+            </p>
+            <p>2024 &#169; All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
